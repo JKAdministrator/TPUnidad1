@@ -4,33 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css"></link>
 </head>
 <body>
-    <form action="">
+    <form action="" class="card">
+
+        <h1 id="titulo">Seguro No Pagamos Cooperativa</h1>
+        <h2 id="subtitulo">Formulario de cliente</h1>
         <label for="nombre">Nombre :</label>
-        <input type="text" name="nombre" id="nombre">
+        <input type="text" name="nombre" id="nombre" tabindex="1" autofocus>
         
         <label for="apellido">Apellido :</label>
-        <input type="text" name="apellido" id="apellido">
+        <input type="text" name="apellido" id="apellido" tabindex="2">
         
         <label for="dni">DNI :</label>
-        <input type="text" name="dni" id="dni">
+        <input type="text" name="dni" id="dni" tabindex="3">
         
         <label for="email">Email :</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" tabindex="4">
 
         <label for="telefono">Teléfono :</label>
-        <input type="text" name="telefono" id="telefono">
+        <input type="text" name="telefono" id="telefono" tabindex="5">
 
-        <label for="tipoDeSeguro">Tipo de seguro :</label>
-        <select name="tipoDeSeguro" id="tipoDeSeguro">
+        <label for="tipoSeguro">Tipo de seguro :</label>
+        <select name="tipoSeguro" id="tipoSeguro" tabindex="6">
+            <option value="" data-valor="">Seleccione un seguro</option>
             <option value="0" data-valor="500">Básico</option>
             <option value="1" data-valor="1000">Intermedio</option>
             <option value="2" data-valor="1500">Premium</option>
         </select>
-        <label for="tipoDeSeguro">Valor del seguro :</label>
-        <span name="valorDelSeguro" id="valorDelSeguro"></span>
-        <button type="button">GRABAR</button>
+
+        <label for="valorSeguro">Valor del seguro :</label>
+        <span name="valorSeguro" id="valorSeguro"></span>
+        <button type="button" name="grabar" id="grabar" disabled title="Funcionalidad no disponible">GRABAR</button>
     </form>
     
 </body>
