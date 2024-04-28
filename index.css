@@ -73,8 +73,8 @@ label[for="telefono"]{    grid-area: ltelefono;}
 label[for="tipoSeguro"]{    grid-area: ltipoSeguro;}
 #tipoSeguro{                grid-area: itipoSeguro;}
 
-label[for="valorSeguro"]{    grid-area: lvalorSeguro;}
-#valorSeguro{                grid-area: ivalorSeguro;}
+#lvalorSeguro{    grid-area: lvalorSeguro;}
+#ivalorSeguro{    grid-area: ivalorSeguro;}
 
 #grabar{                
     grid-area: grabar;
